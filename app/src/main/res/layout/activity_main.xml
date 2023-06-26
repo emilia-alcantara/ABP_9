@@ -8,10 +8,11 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imgBoton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#967E76"
+        android:contentDescription="Icono que representa la silueta de un avión."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.266"
@@ -21,36 +22,39 @@
         app:srcCompat="@drawable/baseline_airplanemode_active_24" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imgBoton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:background="#967E76"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        android:contentDescription="Icono que representa la silueta de un auto mirado desde el frente."
+        app:layout_constraintBottom_toBottomOf="@+id/imgBoton1"
+        app:layout_constraintStart_toEndOf="@+id/imgBoton1"
+        app:layout_constraintTop_toTopOf="@+id/imgBoton1"
         app:srcCompat="@drawable/baseline_directions_car_24" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imgBoton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:background="#967E76"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        android:contentDescription="Icono que representa una persona recostada en una cama."
+        app:layout_constraintEnd_toEndOf="@+id/imgBoton1"
+        app:layout_constraintStart_toStartOf="@+id/imgBoton1"
+        app:layout_constraintTop_toBottomOf="@+id/imgBoton1"
         app:srcCompat="@drawable/baseline_hotel_24" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imgBoton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:background="#967E76"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        android:contentDescription="Icono que muestra dos utencilios, un tenedor y una cuchara."
+        app:layout_constraintBottom_toBottomOf="@+id/imgBoton3"
+        app:layout_constraintStart_toEndOf="@+id/imgBoton3"
+        app:layout_constraintTop_toTopOf="@+id/imgBoton3"
         app:srcCompat="@drawable/baseline_dining_24" />
 
     <androidx.constraintlayout.widget.Guideline
