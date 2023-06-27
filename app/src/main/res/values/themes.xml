@@ -3,7 +3,10 @@
     <style name="Base.Theme.ABP9" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name = "android:statusBarColor">#884A39</item>
+        <item name = "android:statusBarColor">#9BABB8</item>
+        <item name="android:navigationBarColor">#9BABB8</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.ABP9" parent="Base.Theme.ABP9" />
