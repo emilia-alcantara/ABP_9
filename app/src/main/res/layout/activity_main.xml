@@ -13,23 +13,21 @@
         android:layout_height="wrap_content"
         android:background="#967E76"
         android:contentDescription="Icono que representa la silueta de un avión."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:srcCompat="@drawable/baseline_airplanemode_active_24" />
 
     <ImageButton
         android:id="@+id/imgBoton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
         android:background="#967E76"
         android:contentDescription="Icono que representa la silueta de un auto mirado desde el frente."
         app:layout_constraintBottom_toBottomOf="@+id/imgBoton1"
-        app:layout_constraintStart_toEndOf="@+id/imgBoton1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/imgBoton1"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_directions_car_24" />
@@ -38,23 +36,23 @@
         android:id="@+id/imgBoton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:background="#967E76"
         android:contentDescription="Icono que representa una persona recostada en una cama."
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="@+id/imgBoton1"
         app:layout_constraintStart_toStartOf="@+id/imgBoton1"
-        app:layout_constraintTop_toBottomOf="@+id/imgBoton1"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
         app:srcCompat="@drawable/baseline_hotel_24" />
 
     <ImageButton
         android:id="@+id/imgBoton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
         android:background="#967E76"
         android:contentDescription="Icono que muestra dos utencilios, un tenedor y una cuchara."
         app:layout_constraintBottom_toBottomOf="@+id/imgBoton3"
-        app:layout_constraintStart_toEndOf="@+id/imgBoton3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/imgBoton3"
         app:srcCompat="@drawable/baseline_dining_24" />
 
@@ -70,34 +68,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:layout_constraintGuide_percent="0.25" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="309dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="83dp" />
+        app:layout_constraintGuide_begin="30dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="83dp" />
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
