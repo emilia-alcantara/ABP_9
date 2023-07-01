@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.493"
         app:srcCompat="@drawable/baseline_airplanemode_active_24" />
 
     <ImageButton
@@ -40,8 +41,10 @@
         android:contentDescription="Icono que representa una persona recostada en una cama."
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="@+id/imgBoton1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imgBoton1"
         app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:layout_constraintVertical_bias="0.481"
         app:srcCompat="@drawable/baseline_hotel_24" />
 
     <ImageButton

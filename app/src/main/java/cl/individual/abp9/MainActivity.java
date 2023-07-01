@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import cl.individual.abp9.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
+
+    private ActivityMainBinding binding;
     int imagenBoton1 = R.drawable.baseline_airplanemode_active_24;
     int imagenBoton2 = R.drawable.baseline_directions_car_24;
     int imagenBoton3 = R.drawable.baseline_hotel_24;
@@ -16,38 +20,36 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         initListeners();
     }
 
     private void initListeners() {
-        ImageButton imgBoton1 = findViewById(R.id.imgBoton1);
-        ImageButton imgBoton2 = findViewById(R.id.imgBoton2);
-        ImageButton imgBoton3 = findViewById(R.id.imgBoton3);
-        ImageButton imgBoton4 = findViewById(R.id.imgBoton4);
 
-        imgBoton1.setOnClickListener(new View.OnClickListener() {
+
+        binding.imgBoton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 moveToSecondActivity(imagenBoton1);
             }
         });
 
-        imgBoton2.setOnClickListener(new View.OnClickListener() {
+        binding.imgBoton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 moveToSecondActivity(imagenBoton2);
             }
         });
 
-        imgBoton3.setOnClickListener(new View.OnClickListener() {
+        binding.imgBoton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 moveToSecondActivity(imagenBoton3);
             }
         });
 
-        imgBoton4.setOnClickListener(new View.OnClickListener() {
+        binding.imgBoton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 moveToSecondActivity(imagenBoton4);
